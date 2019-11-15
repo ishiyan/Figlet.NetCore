@@ -18,8 +18,3 @@ steps:
     zipAfterPublish: true
     modifyOutputPath: false
     arguments: '-c release -r win-x64 --self-contained true /p:PublishTrimmed=true'
-- task: DownloadBuildArtifacts@0
-  inputs:
-    buildType: 'current'
-    downloadType: 'single'
-    downloadPath: '$(System.ArtifactsDirectory)'
