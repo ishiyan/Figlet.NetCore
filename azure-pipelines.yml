@@ -20,6 +20,6 @@ steps:
     arguments: '-c release -r win-x64 --self-contained true /p:PublishTrimmed=true'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(ArtifactStagingDirectory)'
+    PathtoPublish: '$(System.ArtifactsDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
