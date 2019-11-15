@@ -14,4 +14,7 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: false
+    projects: 'Figlet.csproj'
+    zipAfterPublish: true
+    modifyOutputPath: false
     arguments: '-c release -r win-x64 --self-contained true /p:PublishTrimmed=true'
