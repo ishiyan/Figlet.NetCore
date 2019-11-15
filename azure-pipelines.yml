@@ -13,5 +13,5 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
-    publishWebProjects: true
+    publishWebProjects: false
     arguments: '-c release -r win-x64 --self-contained true /p:PublishTrimmed=true'
